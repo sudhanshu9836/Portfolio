@@ -1,0 +1,34 @@
+*{
+    background-color: black;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin: 100px 0px 50px 0px;
+    text-decoration: underline;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 100px;
+}
+h3{
+    color: yellow;
+    margin: 20px;
+}
+p{
+    margin: 20px
+}
+#btn{
+    height: 35px;
+    width: 80px;
+    border-radius: 20%;
+    background-color: #f3c009;
+    cursor: pointer;
+    font-weight: bolder;
+    color:  #001f3f;
+    position: absolute;
+    right: 20px;
+}
+

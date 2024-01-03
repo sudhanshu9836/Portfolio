@@ -1,0 +1,351 @@
+*{
+    background-color: black;
+    color: white;
+}
+html{
+    height: 100%;
+    width: 100vw;
+}
+
+/* Header Styles */
+
+header{
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+header img{
+    height: 200px;
+    width: 300px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    margin-right: 50px;
+    font-size: 18px;
+}
+header a:hover{
+    text-decoration: underline;
+    color: yellow;
+    text-shadow: 1px 1px 1px yellow;
+}
+#menu {
+    width: 200px; 
+    padding: 8px;
+    font-size: 14px;
+    border: 1px solid yellow;
+    border-radius: 4px;
+    display: none;
+}
+#menu option {
+    background-color: black;
+    color: white;
+}
+#menu option:hover {
+    background-color: #ddd;
+}
+
+/* Button styles */
+.bt1{
+    height: 35px;
+    width: 80px;
+    border-radius: 20%;
+    background-color: #f3c009;
+    cursor: pointer;
+    margin: 10px;
+    font-weight: bolder;
+    color:  #001f3f;
+}
+.bt2{
+    color: white;
+    border: 1px solid white;
+    height: 30px;
+    width: 100px;
+    border-radius: 20%;
+    cursor: pointer; 
+}
+/* Main Styles */
+
+/* Intro styles */
+
+#d1{
+    color: yellow;
+    font-style: italic;
+    transform: translate(-150px);
+}
+#d2{
+    font-style: italic;
+}
+#d3{
+    margin-left: 10px;
+    color: yellow;
+    font-size: 60px;
+}
+.description{
+    position: relative;
+    top: 150px;
+    height: 400px;
+    left: 50px;
+    width: 650px;
+    text-align: center;
+    transform: translate(-100px);
+}
+.intro{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+#my-photo{
+    height: 533px;
+    width: 382px;
+}
+
+/* About Me styles */
+
+.me{
+    font-weight: lighter;
+    margin-left: 20px;
+}
+.about-me{
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* Resume Styles */
+
+.cards{
+    height: 250px;
+    width: 400px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 40px;
+}
+.resume{
+    display: flex;
+}
+/* Common to all styles */
+h2{
+    margin-top: 50px;
+    text-align: center;
+    text-decoration: underline;
+    font-size: 2em;
+}
+h2:hover{
+    color: yellow;
+    font-size: 2.1em;
+}
+
+/* Services styles */
+
+.cards2{
+    height: 200px;
+    width: 300px;
+    border: 1px solid white;
+    text-align: center;
+    margin: 40px;
+    cursor: pointer;
+}
+.cards2 span{
+    margin-top: 50px;
+}
+.services{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.cards2:hover {
+    box-shadow: 1px 1px 5px yellow;
+}
+
+/* My skills styles */
+
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 18px;
+    border-radius: 5px; 
+}
+label{
+    color: yellow;
+    font-size: larger;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    align-items: right;
+}
+.value{
+    text-align: right;
+}
+input[type="range"] {
+    width: 500px;
+    margin-top: -10px;
+}
+.skills{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.range{
+    margin: 10px;
+}
+
+/* My Project styles */
+.projects{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2px 100px;
+}
+.projects img{
+    height: 225px;
+    width: 225px;
+}
+
+.box{
+    height: 280px;
+    width: 225px;
+    margin: 80px;
+    border: 2px solid #fff;
+    text-align: center;
+    cursor: pointer;
+}
+.box p{
+    display: none;
+}
+.box:hover{
+    height: 400px;
+    width: 300px;
+    box-shadow: 2px 2px yellow;
+    margin: 50px;
+    p{
+        display:block
+    }
+    img{
+        width: 300px;
+    }
+}
+
+/*  My Blogs styles */
+.my-blog{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.my-blog img{
+    height: 436px;
+    width: 436px;
+    cursor: pointer;
+}
+
+/* Contact styles */
+.contact-icon{
+    height: 25px;
+    width: 25px;
+    border: 1px solid white;
+    border-radius: 50%;
+  }  
+
+.contact-box{
+    height: 200px;
+    width: 250px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.contacts{
+    display: flex;
+    justify-content: space-around;
+}
+.contacts h4{
+    color: yellow;
+}
+.contact-box:hover{
+    box-shadow: 1px 1px 5px yellow;   
+}
+#my-photo-2{
+    height: 500px;
+    width: 313px;
+}
+
+/* Input Box Styles */
+
+.input-box{
+    height: auto;
+    width: 1400px;
+    border: 1px solid white;
+    display: flex;
+    margin: 30px;
+    align-items: center;
+    overflow: hidden;
+}
+.bar{
+    margin: 15px;
+    width: 90%;
+    background-color: white;
+    color: black;
+}
+input[type="text"] {
+    height: 50px;
+}
+textarea {
+    height: 350px;
+}
+.inputs{
+    height: 600px;
+    width: 1000px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    background-color: white;   
+}
+
+/* Footer styles */
+
+.conclusion{
+    display: flex;
+    justify-content: space-around;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.links a{
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+.conclusion span{
+    transform: translate(0,7px);
+}
+
+.social-links{
+    margin-top: 50px;
+    text-align: center;
+}
+.social-links i{
+    margin-right: 20px;
+    opacity: 0.7;
+    cursor: pointer;
+}
+.social-links i:hover{
+    opacity: 1;
+}
+#last-line{
+    text-align: center;
+    opacity: 0.8;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/logo.png">
+    <title>Welcome to my Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <img src="./assets/Sudhanshu.png" id="my-logo">
+        <div class="nav-tabs">
+            <a class="nav" href="#" id="homeLink">Home</a>
+            <a class="nav" href="#" id="aboutLink">About</a>
+            <a class="nav" href="#" id="resumeLink">Resume</a>
+            <a class="nav" href="#" id="servicesLink">Services</a>
+            <a class="nav" href="#" id="skillsLink">Skills</a>
+            <a class="nav" href="#" id="projectsLink">My Projects</a>
+            <a class="nav" href="#" id="blogLink">My Blog</a>
+            <a class="nav" href="#" id="contactLink">Contact</a>
+        </div>
+        <!-- Only for small screen -->
+        <select id="menu" onchange="navigate()">
+            <option value="#" id="homeLink">Home</option>
+            <option value="#" id="aboutLink">About</option>
+            <option value="#" id="resumeLink">Resume</option>
+            <option value="#" id="servicesLink">Services</option>
+            <option value="#" id="projectsLink">Projects</option>
+            <option value="#" id="contactsLink">Contact</option>
+        </select>  
+    </header>
+    <main>
+        <div class="intro" id="intro">
+            <div class="description">
+                <h3 id="d1">hello ,</h3>
+                <h1 id="d2"> I'm <span id="d3"> Sudhanshu <br> Tiwari</span></h1>
+                <p id="my-desc">A Freelance Web Designer and <br> Frontend Developer </p>
+                <button class="bt1" id="bt1">Hire me</button>
+                <button class="bt2" id="bt2">My Works</button>
+            </div>
+            <img src="./assets/my-photo.png" alt="photo" id="my-photo">
+        </div>
+        <div class="about-me" id="about">
+            <img src="./assets/myphoto-2.png" id="my-photo-2">
+            <div class="description-2">
+                <h1>About me</h1>
+                <p></p>
+                <h3>Name : <span class="me">Sudhanshu Tiwari</span> </h3>
+                <h3>Date of birth :<span class="me"> January 08 , 2004</span> </h3>
+                <h3>Address :  <span class="me"> New Minal , Minal Residency , Bhopal</span> </h3>
+                <h3>Pin Code :  <span class="me">462023</span> </h3>
+                <h3>Email : <span class="me">sudhanshutiwari9836@gmail.com</span> </h3>
+                <h3>Phone : <span class="me">+91 9026058419</span> </h3>
+                <button class="bt1" id="cv">Download CV</button>
+            </div>
+        </div>
+        <h2 id="resume-head">Resume</h2>
+        <div class="resume">
+            <div class="cards">
+                <h3 style="color: yellow;">2010 - 2020 </h3>
+                <h3> St. Mary's School</h3>
+                <h5>Zamania Ghazipur</h5>
+                <p>I graduated from St. Mary's School in 2020, successfully completing my 10th grade. It marks a decade since my journey at the school came to an end.</p>
+            </div>
+            <div class="cards">
+                <h3 style="color: yellow;">2020 - 2022 </h3>
+                <h3> Sunbeam Academy</h3>
+                <h5> Varanasi </h5>
+                <p>In 2022, I triumphantly graduated from Sunbeam Academy, completing my 12th grade and achieving a significant milestone in my academic journey.</p>
+            </div>
+            <div class="cards">
+                <h3 style="color: yellow;">2023 - 2027 </h3>
+                <h3> RGPV</h3>
+                <h5>Bhopal </h5>
+                <p>Currently in my first year, I look forward to completing my college education at RGPV in 2027, anticipating a fulfilling academic journey and future accomplishments.</p>
+            </div>
+        </div>
+        <h2 id="service-head">Services</h2>
+        <div class="services">
+            <div class="cards2">
+                <br><br>
+                <h3>Website Developement</h3>
+                <p>______________________</p>
+            </div>
+            <div class="cards2">
+                <br><br>
+                <h3>User Interface (UI) Designing</h3>
+                <p>______________________</p>
+            </div>
+            <div class="cards2">
+                <br><br>
+                <h3>Content Writing</h3>
+                <p>______________________</p>
+            </div>
+            <div class="cards2">
+                <br><br>
+                <h3>Video Editing </h3>
+                <p>______________________</p>
+            </div>
+            <div class="cards2">
+                <br><br>
+                <h3>Social Media Handling</h3>
+                <p>______________________</p>
+            </div>
+            <div class="cards2">
+                <br><br>
+                <h3>Web Animations</h3>
+                <p>______________________</p>
+            </div>
+        </div>
+        <h2 id="skill-head">My Skills</h2>
+        <div class="skills">
+            <div class="range r1">
+                <label for="disabledRange" class="form-label"> HTML + CSS <span class="value">90%</span></label> <br>
+                <input type="range" class="form-range" id="disabledRange" value="90" disabled>
+            </div>
+            <div class="range r2">
+                <label for="disabledRange" class="form-label">JavaScript<span class="value">75%</span></label> <br>
+                <input type="range" class="form-range" id="disabledRange" value="75" disabled>
+            </div>
+            <div class="range r1">
+                <label for="disabledRange" class="form-label">GSAP<span class="value">75%</span></label> <br>
+                <input type="range" class="form-range" id="disabledRange" value="75" disabled>
+            </div>
+            <div class="range r2">
+                <label for="disabledRange" class="form-label"> Video Editing<span class="value">80%</span></label> <br>
+                <input type="range" class="form-range" id="disabledRange" value="80" disabled>
+            </div>
+            <div class="range r1">
+                <label for="disabledRange" class="form-label">Responsive Web Design <span class="value">50%</span></label> <br>
+                <input type="range" class="form-range" id="disabledRange" value="50" disabled>
+            </div>
+            <div class="range r2">
+                <label for="disabledRange" class="form-label">Content Writing <span class="value">60%</span></label> <br>
+                <input type="range" class="form-range" id="disabledRange" value="60" disabled>
+            </div>
+            
+        </div>
+        <h2 id="project-head">My Projects</h2>
+        <div class="projects">
+            <div class="box b1">
+                <img src="./assets/p1.png" alt="#" id="linkedin">
+                <h4>Cloned Linkedin</h4>
+                <p>I've replicated the functionality of LinkedIn in my own cloned version.</p>
+            </div>
+            <div class="box b1">
+                <img src="./assets/p2.png" alt="#" id="netflix">
+                <h4>Netflix Clone</h4>
+                <p>I've created a duplicate of Netflix with identical streaming features.</p>
+            </div>
+            <div class="box b1">
+                <img src="./assets/p3.jpeg" alt="#" id="todo">
+                <h4>ToDo Web</h4>
+                <p>I've developed a personalized to-do website tailored to my specific needs and preferences.</p>
+            </div>
+            <div class="box b2">
+                <img src="./assets/p4.png" alt="#" id="simonsay">
+                <h4>Simon Say Game</h4>
+                <p>"I've crafted a vibrant and colorful version of the Simon Says game, adding a visually engaging twist to the classic memory challenge."</p>
+            </div>
+            <div class="box b2">
+                <img src="./assets/p5.jpeg" alt="#" id="photo">
+                <h4>Photo web</h4>
+                <p>"I've designed a captivating photo website which uses only html and css for menu bar ..  </p>
+            </div>
+            <div class="box b2">
+                <img src="./assets/p6.png" id="spotify">
+                <h4>Spotify Clone</h4>
+                <p>"I've created a replica of Spotify, offering a personalized music streaming experience with a diverse library of songs and user-friendly features."</p>
+            </div>
+        </div>
+        <h2 id="blog-head">My Blogs</h2>
+        <div class="my-blog">
+            <div class="blog">
+                <img src="./assets/b1.jpg" id="b1">
+                <p>November 21, 2023 ADMIN  </p>
+                <h3>JavaScript Libraries and their implementaion</h2>
+                <p> Importance of libraries in javaScript for better websites <br> and enhancing user experience</p>
+            </div>
+            <div class="blog">
+                <img src="./assets/b2.jpeg" id="b2">
+                <p>December 18, 2023 ADMIN  </p>
+                <h3>Digital Marketing</h2>
+                <p>Why digital marketing is important in running a buisiness <br>and how to use it for better buisiness</p>
+            </div>
+            <div class="blog bl3" >
+                <img src="./assets/b3.jpeg" id="b3">
+                <p>JUNE 21, 2023 ADMIN  3</p>
+                <h3>The Importance of User Experience (UX) in Web Design</h2>
+                <p>Uncover the pivotal role of User Experience (UX) in  <br>web design </p>
+            </div>
+        </div>
+        <h2 id="contact-head">Contact me</h2>
+        <div class="contacts">
+            <div class="address contact-box">
+                <div class="material-symbols-outlined contact-icon">
+                    home
+                </div>
+                <h4>Address</h4>
+                <p>Tulip 516, New Minal, <br> Minal Residency, Bhopal</p>
+            </div>
+            <div class="call contact-box">
+                <div class="material-symbols-outlined contact-icon">
+                    call
+                </div>
+                <h4>Phone No.</h4>
+                <p>+91 9026058419</p>
+            </div>
+            <div class="mail contact-box">
+                <div class="material-symbols-outlined contact-icon">
+                    Email
+                </div>
+                <h4>Email</h4>
+                <p>sudhanshutiwari9836@gmail.com</p>
+            </div>
+            <div class="web contact-box">
+                <div class="material-symbols-outlined contact-icon">
+                    public
+                </div>
+                <h4>Website</h4>
+                <p>wwww.sudhanshutiwari9836.com</p>
+            </div>
+        </div>
+        <div class="input-box">
+            <img src="./assets/myphoto-3.png" id="my-photo-3">
+            <div class="inputs">
+                <input type="text" class="bar" placeholder="Your Name..."> 
+                <input type="text" class="bar" placeholder="Your Email..."> 
+                <input type="text" class="bar" placeholder="Subject..."> 
+                <textarea name="message" class="bar" cols="80" rows="10" placeholder="Message"></textarea>
+                <button class="bt1">Submit</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="conclusion">
+            <div class="about">
+                <h3>About</h4>
+                <p>Navigating the ever-evolving web cosmos, I am a <br>
+                    freelance web artisan, crafting digital realms <br>
+                    where functionality dances with aesthetics. With <br> 
+                    every line of code, I bring visions to life and <br>
+                    transform ideas into interactive marvels.</p>
+            </div>
+            <div class="links">
+                <h3>Links</h4>
+                    <a href="#" id="navHome"><span class="material-symbols-outlined">
+                        chevron_right
+                        </span>Home</a> 
+                    
+                    <a href="#" id="navAbout"><span class="material-symbols-outlined">
+                        chevron_right
+                        </span>About</a> 
+                    
+                    <a href="#" id="navServices"><span class="material-symbols-outlined">
+                        chevron_right
+                        </span>Services</a>
+                    
+                    <a href="#" id="navProjects"><span class="material-symbols-outlined">
+                        chevron_right
+                        </span>Projects</a>
+                    
+                    <a href="#" id="navContact"><span class="material-symbols-outlined">
+                        chevron_right
+                        </span>Contact</a>
+                    
+            </div>
+            <div class="question">
+                <h3>Have A Question?</h4>
+                <p><span class="material-symbols-outlined">
+                    home
+                </span>Tulip 516, New Minal, <br> Minal Residency, Bhopal</p>
+                <p><span class="material-symbols-outlined">
+                    call
+                </span>+91 9026058419</p>
+                <p><span class="material-symbols-outlined">
+                    mail
+                </span>wwww.sudhanshutiwari9836.com</p>
+            </div>
+        </div>
+        <div class="social-links">
+            <i id="instagram" class="fa-brands fa-instagram"></i> 
+            <i id="twitter" class="fa-brands fa-twitter"></i>
+            <i id="github" class="fa-brands fa-github"></i>
+            <i id="linkedin-id" class="fa-brands fa-linkedin"></i>
+        </div>
+        <p id="last-line">Copyright ©2023 All rights reserved |Made with &hearts; by Sudhanshu</p>
+    </footer>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/gsap.min.js" integrity="sha512-EZI2cBcGPnmR89wTgVnN3602Yyi7muWo8y1B3a8WmIv1J9tYG+udH4LvmYjLiGp37yHB7FfaPBo8ly178m9g4Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.4/ScrollTrigger.min.js" integrity="sha512-OzC82YiH3UmMMs6Ydd9f2i7mS+UFL5f977iIoJ6oy07AJT+ePds9QOEtqXztSH29Nzua59fYS36knmMcv79GOg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+</body>
+</html>
+
+
+
+
+
