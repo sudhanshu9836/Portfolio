@@ -269,6 +269,7 @@ input[type="range"] {
 #my-photo-2{
     height: 500px;
     width: 313px;
+    border-radius: 10px;
 }
 
 /* Input Box Styles */
